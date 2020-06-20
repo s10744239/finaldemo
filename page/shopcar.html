@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../assists/js/top.js"></script> 
+    <link rel="stylesheet" href="../assists/css/css.css">
+    <link rel="stylesheet" href="../assists/css/menu.css">
+    <link rel="stylesheet" href="../assists/css/shopcar.css">
+
+    <link rel="icon" herf="../assists/image/logo1.png" type="image/x-icon"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>購物車</title>
+		<div id="gotop" style="position:fixed;bottom:10%;right:2%;z-index:2;">
+			<img  src="../assists/image/cat7.png"/ width="200" onMouseOver="this.src='../assists/image/cat8.png';" onMouseOut="this.src='../assists/image/cat7.png'; ">&nbsp;
+		</div>
+
+		<div class="top">
+			<div id="cssmenu">
+		<script type="text/javascript">
+		$("#gotop").click(function(){
+	jQuery("html,body").animate({
+	scrollTop:0
+	},1000);
+		});
+		$(window).scroll(function() {
+		if ( $(this).scrollTop() > 0){
+	$('#gotop').fadeIn("fast");
+	} else {
+	$('#gotop').stop().fadeOut("fast");
+	}
+		});
+	</script>
+</head>
+<body>
+		<div style="position:fixed;top:0%;left:2%;z-index:1000;"> 
+    <a href=../index.html><img  src="../assists/image/logo1.png" height="80"></a>
+  </div>
+				
+				<ul>
+					<li ><a href='login.html' style="font-size: 20px"><span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					登入/註冊</span></a>
+				</li>
+					<li class='active has-sub'><a href=shopcar.html><span>購物車</span></a></li>
+				
+				<li class='active has-sub'><a href=about.html><span>關於我們</span></a></li>
+				
+				<li class='active has-sub'><a href='#'><span>會員專區</span></a>
+				<ul>
+					<li ><a href=member.html><span>個人資料</span></a></li>
+					<li ><a href=ordersearch.html><span>訂單查詢</span></a></li>
+				</ul>
+			</li>
+			<li class='active has-sub'><a href='#'><span>商品一覽</span></a>
+			<ul>
+				<li ><a href='#'><span>熱門商品</span></a></li>
+				<li ><a href=good.html><span>所有商品</span></a></li>
+			</ul>
+		</li>
+		
+		</ul>
+		</div>
+	</div>
+
+  
+
+
+<div class="box1">
+<h1 align="center" style="font-size: 50px;">我的購物車</h1>
+<br><br><br>
+
+
+    
+    <div class="shopping-cart">
+    <div class="column-labels" style="line-height: 50px;"><!--大標題-->
+        <label class="product-image" style="color: black;font-size: 30px;">Image</label>
+        <label class="product-details" style="color: black;font-size: 30px;">Product</label>
+        <label class="product-price" style="color: black;font-size: 30px;">價錢</label>
+        <label class="product-quantity" style="color: black;font-size: 30px;">數量</label>
+        <label class="product-removal" style="color: black;font-size: 30px;">Remove</label>
+        <label class="product-line-price" style="color: black;font-size: 30px;">總共</label>
+    </div>
+
+    <div class="product">
+        <div class="product-image"><img src="../assists/image/g6.png"></div>
+        <div class="product-details">
+            <div class="product-title" style="font-size: 35px;margin-top :30px;">波霸奶茶</div>
+        </div>
+        <div class="product-price" style="font-size: 50px;margin-top :20px;">130</div>
+        <div class="product-quantity" style="font-size: 50px;margin-top :20px;"><input type="number" value="0" min="1" style="width: 60px;"></div>
+        <div class="product-removal">
+            <button class="remove-product" style="font-size:20px;margin-top :30px;">移除</button>
+        </div>
+        <div class="product-line-price" style="font-size: 50px;margin-top :20px;px;">0</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image" ><img src="../assists/image/g4.png"></div>
+        <div class="product-details">
+            <div class="product-title" style="font-size: 35px;margin-top :30px;">黑糖珍珠鮮奶</div>
+        </div>
+        <div class="product-price" style="font-size: 50px;margin-top :20px;">130</div>
+        <div class="product-quantity" style="font-size: 50px;margin-top :20px;"><input type="number" value="0" min="1" style="width: 60px;"></div>
+        <div class="product-removal">
+            <button class="remove-product" style="font-size:20px;margin-top :30px;">移除</button>
+        </div>
+        <div class="product-line-price" style="font-size: 50px;margin-top :20px;px;">0</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image" ><img src="../assists/image/g3.png"></div>
+        <div class="product-details">
+            <div class="product-title" style="font-size: 35px;margin-top :30px;">抹茶拿鐵</div>
+        </div>
+        <div class="product-price" style="font-size: 50px;margin-top :20px;">130</div>
+        <div class="product-quantity" style="font-size: 50px;margin-top :20px;"><input type="number" value="0" min="1" style="width: 60px;"></div>
+        <div class="product-removal">
+            <button class="remove-product" style="font-size:20px;margin-top :30px;">刪除</button>
+        </div>
+        <div class="product-line-price" style="font-size: 50px;margin-top :20px;">0</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image" ><img src="../assists/image/g2.png"></div>
+        <div class="product-details">
+            <div class="product-title" style="font-size: 35px;margin-top :30px;">可可拿鐵</div>
+        </div>
+        <div class="product-price" style="font-size: 50px;margin-top :20px;">130</div>
+        <div class="product-quantity" style="font-size: 50px;margin-top :20px;"><input type="number" value="0" min="1" style="width: 60px;"></div>
+        <div class="product-removal">
+            <button class="remove-product" style="font-size:20px;margin-top :30px;">刪除</button>
+        </div>
+        <div class="product-line-price" style="font-size: 50px;margin-top :20px;">0</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image" ><img src="../assists/image/g1.png"></div>
+        <div class="product-details">
+            <div class="product-title" style="font-size: 35px;margin-top :30px;">芋頭鮮奶</div>
+        </div>
+        <div class="product-price" style="font-size: 50px;margin-top :20px;">130</div>
+        <div class="product-quantity" style="font-size: 50px;margin-top :20px;"><input type="number" value="0" min="1" style="width: 60px;"></div>
+        <div class="product-removal">
+            <button class="remove-product" style="font-size:20px;margin-top :30px;">刪除</button>
+        </div>
+        <div class="product-line-price" style="font-size: 50px;margin-top :20px;">0</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image" ><img src="../assists/image/g5.png"></div>
+        <div class="product-details">
+            <div class="product-title" style="font-size: 35px;margin-top :30px;">泰式奶茶</div>
+        </div>
+        <div class="product-price" style="font-size: 50px;margin-top :20px;">130</div>
+        <div class="product-quantity" style="font-size: 50px;margin-top :20px;"><input type="number" value="0" min="1" style="width: 60px;"></div>
+        <div class="product-removal">
+            <button class="remove-product" style="font-size:20px;margin-top :30px;">刪除</button>
+        </div>
+        <div class="product-line-price" style="font-size: 50px;margin-top :20px;">0</div>
+    </div>
+
+
+
+
+
+  
+
+    
+
+    <div class="totals">
+        <div class="totals-item totals-item-total">
+            <label style="font-size: 50px;margin-top :20px;color:black;">總共</label>
+            <div class="totals-value" id="cart-total" style="font-size: 50px;margin-top :20px;">0</div>
+        </div>
+    </div>
+
+
+    <a href=buy.html><button class="checkout" >結帳</button></a>
+
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="../assists/js/sum.js"></script>
+
+ 
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+		<footer>
+	
+	<div class="footer">
+		
+		<a href="https://www.facebook.com/profile.php?id=100004938907781" ><img src="../assists/image/fb.png" width="50"/  style="position:absolute;top:25%;left:2%;z-index:1000;"></a>
+		<a href="https://instagram.com/zhuang_zhicheng?igshid=18p3tahsybi9a" ><img src="../assists/image/ig.png"width="50"/ style="position:absolute;top:25%;left:6%;z-index:1000;"></a>
+		<div style="position:absolute;top:45%;left:38%;z-index:1000;">Copyright © 2020.5 Designed by CYIM </div>
+		<div style="position:absolute;top:45%;right:2%;z-index:1000;">訪客人數：100 人</div>
+	</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>所有商品</title>
+    <link rel="icon" href="image/logo1.png" type="../assists/image/x-icon" / >
+    <script type="text/javascript" src="../assists/js/top.js"></script>
+    <link rel="stylesheet" href="../assists/css/css.css">
+    <link rel="stylesheet" href="../assists/css/menu.css">
+    <link rel="stylesheet" href="../assists/css/orderserch.css">
+    <link rel="stylesheet" href="../assists/css/style_common.css">
+    <link rel="stylesheet" href="../assists/css/style1.css">
+    
+    
+  </head>
+  <div id="gotop" style="position:fixed;bottom:10%;right:2%;z-index:2;">
+    <img  src="../assists/image/cat7.png"/ width="200" onMouseOver="this.src='../assists/image/cat8.png';" onMouseOut="this.src='../assists/image/cat7.png'; ">&nbsp;
+  </div>
+  <script type="text/javascript">
+    $("#gotop").click(function(){
+  jQuery("html,body").animate({
+  scrollTop:0
+  },1000);
+    });
+    $(window).scroll(function() {
+    if ( $(this).scrollTop() > 0){
+  $('#gotop').fadeIn("fast");
+  } else {
+  $('#gotop').stop().fadeOut("fast");
+  }
+    });
+  </script>
+  <body >
+    
+<div style="position:fixed;top:0%;left:2%;z-index:1000;"> 
+    <a href=../index.html><img  src="../assists/image/logo1.png" height="80"></a>
+  </div>
+
+    <div class="top">
+      <div id="cssmenu" style="z-index: 999;">
+        
+        <ul>
+          <li ><a href='login.html' style="font-size: 20px"><span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          登入/註冊</span></a>
+        </li>
+        <li class='active has-sub'><a href=shopcar.html><span>購物車</span></a></li>
+        
+        <li class='active has-sub'><a href=about.html><span>關於我們</span></a></li>
+        
+        <li class='active has-sub'><a href='#'><span>會員專區</span></a>
+        <ul>
+          <li ><a href=member.html><span>個人資料</span></a></li>
+          <li ><a href=ordersearch.html><span>訂單查詢</span></a></li>
+        </ul>
+      </li>
+      <li class='active has-sub'><a href='#'><span>商品一覽</span></a>
+      <ul>
+        <li ><a href='../index.html#top3'><span>熱門商品</span></a></li>
+        <li ><a href=good.html><span>所有商品</span></a></li>
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+</div>
+
+<br>
+<div style="margin: 10%; width: 80%; z-index: 0;">
+<div class="view view-first" style="width: 30%;">
+   <img src="../assists/image/g6.png" />
+  <div class="mask">
+    <h2>波霸奶茶</h2>
+    <p>用心熬煮的粉圓加入特條奶茶之中，在奶香味與茶香以外的煙韌口感，使人欲罷不能。</p>
+    <a href="gooddetail.html" class="info">詳細資料</a>
+  </div>
+</div>
+<div class="view view-first" style="width: 30%;">
+  <img src="../assists/image/g4.png" style="height:80%;width: 80%;margin-top: 10%;margin-left: 10%">
+  <div class="mask">
+    <h2>黑糖珍珠鮮奶</h2>
+    <p>黑糖香氣濃郁,搭配Q彈的珍珠,與鮮奶完美的融合再一起，大人和小孩都愛的飲料。</p>
+    <a href="gooddetail.html" class="info">詳細資料</a>
+  </div>
+</div>
+
+<div class="view view-first" style="width: 30%;">
+  <img src="../assists/image/g5.png" style="height:100%;width: 100%;"/>
+  <div class="mask">
+    <h2>泰式奶茶</h2>
+    <p>使用鮮奶、煉乳、淡奶和嚴選泰國茶葉，使得奶味豐富，但又保留一點茶葉的苦香味，多層次的口感讓人唇齒留香。</p>
+    <a href="gooddetail.html" class="info">詳細資料</a>
+  </div>
+</div>
+<div class="view view-first" style="width: 30%;">
+  <img src="../assists/image/g3.png"  style="height:100%;width: 100%;"/>
+  <div class="mask">
+    <h2>抹茶拿鐵</h2>
+    <p>厚實茶道以上等抹茶完整呈現日式風味，加上蔗糖的清甜，調配出表面具有奶泡的抹茶拿鐵。</p>
+    <a href="gooddetail.html" class="info">詳細資料</a>
+  </div>
+</div>
+<div class="view view-first" style="width: 30%;">
+  <img src="../assists/image/g2.png"  style="height:100%;width: 100%;"/>
+  <div class="mask">
+    <h2>可可拿鐵</h2>
+    <p>可香醇濃郁，散發濃濃巧克力香氣!早上喝給你滿滿的能量，下午暖暖一杯紓緩心情更放鬆!</p>
+    <a href="gooddetail.html" class="info">詳細資料</a>
+  </div>
+</div>
+<div class="view view-first" style="width: 30%;">
+  <img src="../assists/image/g1.png"  style="height:100%;width: 100%;"/>
+  <div class="mask">
+    <h2>芋頭鮮奶</h2>
+    <p>將芋頭煮到非常綿密，但中間又伴隨著一些細碎的芋頭顆粒，加在鮮奶中，完全融合的香醇感， 喜歡芋頭的朋友，一定要來試試看。</p>
+    <a href="gooddetail.html" class="info">詳細資料</a>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="footer">
+
+<a href="https://www.facebook.com/profile.php?id=100004938907781" ><img src="../assists/image/fb.png" width="50"/  style="position:absolute;top:25%;left:2%;z-index:1000;"></a>
+<a href="https://instagram.com/zhuang_zhicheng?igshid=18p3tahsybi9a" ><img src="../assists/image/ig.png"width="50"/ style="position:absolute;top:25%;left:6%;z-index:1000;"></a>
+<div style="position:absolute;top:45%;left:38%;z-index:1000;">Copyright © 2020.5 Designed by CYIM </div>
+<div style="position:absolute;top:45%;right:2%;z-index:1000;">訪客人數：100 人</div>
+</body>
+</html>

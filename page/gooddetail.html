@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../assists/js/top.js"></script> 
+	<link rel="stylesheet" href="../assists/css/css.css">
+	<link rel="stylesheet" href="../assists/css/menu.css">
+	<link rel="stylesheet" href="../assists/css/orderserch.css">
+	<link rel="stylesheet" href="../assists/css/gooddetal.css">
+	<title>商品細節</title>
+		<div id="gotop" style="position:fixed;bottom:10%;right:2%;z-index:2;">
+			<img  src="../assists/image/cat7.png"/ width="200" onMouseOver="this.src='../assists/image/cat8.png';" onMouseOut="this.src='../assists/image/cat7.png'; ">&nbsp;
+		</div>
+
+		<script type="text/javascript">
+		$("#gotop").click(function(){
+	jQuery("html,body").animate({
+	scrollTop:0
+	},1000);
+		});
+		$(window).scroll(function() {
+		if ( $(this).scrollTop() > 0){
+	$('#gotop').fadeIn("fast");
+	} else {
+	$('#gotop').stop().fadeOut("fast");
+	}
+		});
+	</script>
+	<STYLE>
+		@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+
+		.star-rating i {
+	color: red;
+	font-size: 24px;
+		}
+	</STYLE>
+<script type="text/javascript">
+	function add(ths, sno) {
+	for (var i = 1; i <= 5; i++) {
+		var cur = document.getElementById("star" + i)
+		cur.className = "far fa-star"
+	}
+	for (var i = 1; i <= sno; i++) {
+		var cur = document.getElementById("star" + i)
+		if (cur.className == "far fa-star") {
+			cur.className = "fas fa-star"
+		}
+	}
+}
+</script>
+</head>
+<body>
+		
+<div style="position:fixed;top:0%;left:2%;z-index:1000;"> 
+    <a href=../index.html><img  src="../assists/image/logo1.png" height="80"></a>
+  </div>
+		<div class="top">
+			<div id="cssmenu">
+				
+				<ul>
+					<li ><a href='login.html' style="font-size: 20px"><span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					登入/註冊</span></a>
+				</li>
+					<li class='active has-sub'><a href=shopcar.html><span>購物車</span></a></li>
+				
+				<li class='active has-sub'><a href=about.html><span>關於我們</span></a></li>
+				
+				<li class='active has-sub'><a href='#'><span>會員專區</span></a>
+				<ul>
+					<li ><a href=member.html><span>個人資料</span></a></li>
+					<li ><a href=ordersearch.html><span>訂單查詢</span></a></li>
+				</ul>
+			</li>
+			<li class='active has-sub'><a href='#'><span>商品一覽</span></a>
+			<ul>
+				<li ><a href='#'><span>熱門商品</span></a></li>
+				<li ><a href=good.html><span>所有商品</span></a></li>
+			</ul>
+		</li>
+		
+		</ul>
+		</div>
+	</div>
+
+
+<div class="box1">
+	<div style="border: 10px solid white;width: 350px;height: 450px;float: left;">
+<img src="../assists/image/g4.png" style="height:85%;width: 80%;margin-top: 10%;margin-left: 10%; float: left;">
+	</div>
+	<div class="box1-1">
+		<h1>波霸奶茶</h1>
+		<hr><br>
+		<h1>$130</h1><br>
+		<h2>介紹：</h2>
+		<h3 style=" font-family: Georgia, serif; font-size:20px;line-height: 30px;padding-top:15px;"> 
+		用心熬煮的粉圓加入特條奶茶之中，在濃濃奶味與茶香以外的煙韌口感，使人欲罷不能。</h3><br>
+		<h2>數量：   <input type="number" value="0" min="0" style=" width:50px;font-size: 30px;"></h2><br><br>
+		<button class="submit"  type="button" style="font-size: 30px;width: 200px;">加入購物車</button>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+	<div class="comment-msg">
+		<div class="msgbox">
+			<span class="msgword"><h1>評價</h1></span>
+			<form action="" method="post"><br><!-- 表格=ID+評論內容 -->
+				<span class="msgword">帳號：rryan0955435974@gmail.com</span><br><br>
+
+				<div class="form-group">
+				<div class="star-rating">
+					<i class="fas fa-star" id="star1" onclick="add(this,1)"></i>
+					<i class="fas fa-star" id="star2" onclick="add(this,2)"></i>
+					<i class="fas fa-star" id="star3" onclick="add(this,3)"></i>
+					<i class="far fa-star" id="star4" onclick="add(this,4)"></i>
+					<i class="far fa-star" id="star5" onclick="add(this,5)"></i>
+				</div>
+				</div>
+				<br>
+				<textarea class="Textinput" name="message" placeholder="留下您的評價~~" wrap=physical onKeyDown="checkMaxInput(this.form)" onKeyUp="checkMaxInput(this.form)" required>
+				</textarea>
+
+			<!-- 送出留言 -->
+			<input class="submit" type="submit" name="submit" value="送出">
+			</form>
+		</div>
+
+
+		
+		 <div class="message">
+			<div class="icon">
+			<img src="" width="250">
+			</div>
+		  <div class="data"><hr style="border-color: black;width: 90%;">
+			<div class="namea">小花</div>
+			<div class="love">★★★★★</div>
+			<div class="word">超級好喝喔</div>
+		  </div>
+	    </div> 
+	</div>
+
+
+
+	
+	
+
+</div>
+
+
+
+
+		<footer>
+	
+	<div class="footer">
+		
+		<a href="https://www.facebook.com/profile.php?id=100004938907781" ><img src="../assists/image/fb.png" width="50"/  style="position:absolute;top:25%;left:2%;z-index:1000;"></a>
+		<a href="https://instagram.com/zhuang_zhicheng?igshid=18p3tahsybi9a" ><img src="../assists/image/ig.png"width="50"/ style="position:absolute;top:25%;left:6%;z-index:1000;"></a>
+		<div style="position:absolute;top:45%;left:38%;z-index:1000;">Copyright © 2020.5 Designed by CYIM </div>
+		<div style="position:absolute;top:45%;right:2%;z-index:1000;">訪客人數：100 人</div>
+	</div>
+	</footer>
+
+</body>
+</html>

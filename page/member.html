@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assists/css/css.css">
+		<link rel="stylesheet" href="../assists/css/menu.css">
+		<link rel="stylesheet" href="../assists/css/form.css">
+		<link rel="stylesheet" href="../assists/css/member.css">
+		<link rel="icon" href="image/logo1.png" type="../assists/image/x-icon" / >
+	<script type="text/javascript" src="../assists/js/top.js"></script> 
+	<div id="gotop" style="position:fixed;bottom:10%;right:2%;z-index:2;"> 
+		<img  src="../assists/image/cat7.png"/ width="200" onMouseOver="this.src='../assists/image/cat8.png';" onMouseOut="this.src='../assists/image/cat7.png'; ">&nbsp;
+	</div>
+
+	<script type="text/javascript">
+		$("#gotop").click(function(){
+	jQuery("html,body").animate({
+	scrollTop:0
+	},1000);
+		});
+		$(window).scroll(function() {
+		if ( $(this).scrollTop() > 0){
+	$('#gotop').fadeIn("fast");
+	} else {
+	$('#gotop').stop().fadeOut("fast");
+	}
+		});
+	</script>
+
+	<title>會員資料</title>
+
+	
+
+</head>
+<body class="formbody">
+
+<div style="position:fixed;top:0%;left:2%;z-index:1000;"> 
+    <a href=../index.html><img  src="../assists/image/logo1.png" height="80"></a>
+  </div>
+<div class="top">
+	<div id="cssmenu">
+      
+      <ul>
+	    <li ><a href='login.html' style="font-size: 20px"><span>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;
+	    登入/註冊</span></a>
+	    </li>
+
+		<li class='active has-sub'><a href=shopcar.html><span>購物車</span></a></li>
+				
+				<li class='active has-sub'><a href=about.html><span>關於我們</span></a></li>
+				
+				<li class='active has-sub'><a href='#'><span>會員專區</span></a>
+				<ul>
+					<li ><a href=member.html><span>個人資料</span></a></li>
+					<li ><a href=ordersearch.html><span>訂單查詢</span></a></li>
+				</ul>
+			</li>
+			<li class='active has-sub'><a href='#'><span>商品一覽</span></a>
+			<ul>
+				<li ><a href='../index.html#top3'><span>熱門商品</span></a></li>
+				<li ><a href=good.html><span>所有商品</span></a></li>
+      </ul>
+   </li>
+          
+
+
+       </ul>
+      </div> 
+	</div>
+
+	
+	<aside class="aside">
+			<p><a href="member.html"><span>個人資料</span></a></p>
+			<p><a href="ordersearch.html"><span>訂單查詢</span></a></p>
+			<p><a href="changepassword.html"><span>更改密碼</span></a></p>
+			<p><a href="about.html"><span>聯絡我們</span></a></p>
+		</aside>
+		
+	<form class="form">
+			<H1>會員資料</H1>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email帳號：kkkk@gmail.com</label>
+			</div>
+			<div class="form-group">
+				<label>姓名：羅祥</label>
+			</div>
+			<div class="form-group">
+				<label>電話：</label>
+				<input type="text" class="form-control" id="phone">
+			</div>
+			<div class="form-group">
+				<label>生日：</label>
+				<input type="date" class="form-control" id="born">
+			</div>
+			<div class="form-group">
+				<label>地址：</label>
+				<input type="text" class="form-control" id="address">
+			</div>
+			<button type="submit" class="btn">確定</button>
+		</form>
+
+
+
+
+			<footer>
+	
+	<div class="footer" >
+		
+		<a href="https://www.facebook.com/profile.php?id=100004938907781" ><img src="../assists/image/fb.png" width="50"/  style="position:absolute;top:25%;left:2%;z-index:1000;"></a>
+		<a href="https://instagram.com/zhuang_zhicheng?igshid=18p3tahsybi9a" ><img src="../assists/image/ig.png"width="50"/ style="position:absolute;top:25%;left:6%;z-index:1000;"></a>
+		<div style="position:absolute;top:45%;left:38%;z-index:1000;">Copyright © 2020.5 Designed by CYIM </div>
+		<div style="position:absolute;top:45%;right:2%;z-index:1000;">訪客人數：100 人</div>
+	</div>
+			</footer>
+
+</body>
+</html>

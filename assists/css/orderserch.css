@@ -1,0 +1,31 @@
+.table{
+	border: 2px bold black;
+	font-size: 25px;
+	position:relative;
+    left: 15%;
+    top:30%;
+    z-index:-10;
+}
+th{
+	text-align: center;
+	font-size: 35px;
+	background-color:burlywood;
+	padding:10px;
+}
+.tr1{
+
+	background-color: wheat;
+	text-align: center;
+}
+.tr2{
+	background-color: tan;
+	text-align: center;
+}
+td{
+	width: 30%;
+	height: 30%;
+}
+*{
+	font-family:微軟正黑體;
+ margin: 0px;
+}
